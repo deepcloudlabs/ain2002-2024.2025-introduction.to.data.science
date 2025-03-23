@@ -1,0 +1,6 @@
+data(mtcars)
+head(mtcars)
+model2 <- lm(mpg ~ hp + wt + disp, data = mtcars)
+summary(model2)
+library(car)
+vif(model2)
